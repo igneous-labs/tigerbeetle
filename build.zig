@@ -1141,6 +1141,8 @@ fn build_c_client(
                 platform[0],
                 lib.out_filename,
             })).step);
+
+            b.installArtifact(static_lib);
         }
     }
 }
